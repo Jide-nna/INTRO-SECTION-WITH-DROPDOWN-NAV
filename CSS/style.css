@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	font-family: 'Epilogue', sans-serif;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 30px 60px;
+	font-size: 18px;
+	position: relative;
+}
+
+header {
+	display: flex;
+	width: 100%;
+	gap: 20px;
+	align-items: center;
+	color: hsl(0, 0%, 41%);
+	justify-content: space-between;
+}
+
+.logo {
+	width: 100px;
+	margin-top: 15px;
+}
+.logo img {
+	width: 100%;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+}
+.nav ul {
+	display: flex;
+	align-items: center;
+}
+.nav li {
+	margin-left: 40px;
+}
+.nav li img {
+	margin-left: 5px;
+}
+.register {
+	padding: 10px 15px;
+	border: 2px solid hsl(0, 0%, 41%);
+	border-radius: 10px;
+    opacity: 80%;
+}
+.log-in li:hover,
+.log-in li:focus {
+	color: #000;
+	cursor: pointer;
+}
+.log-in .register:hover,
+.log-in .register:focus {
+	color: #000;
+	cursor: pointer;
+	background: var(--Almost-White);
+	opacity: 100%;
+}
+.features,
+.company {
+    position: absolute;
+	width: 150px;
+	background-color: #fff;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+		rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+	padding: 20px 20px;
+	border-radius: 20px;
+	color: hsl(0, 0%, 41%);
+	left: -1000px;
+	display: none;
+	transition: all linear 500ms;
+}
+.features-menu:hover{
+	color: var(--Almost-Black);
+	cursor: pointer;
+}
+.company-menu:hover {
+	color: var(--Almost-Black);
+	cursor: pointer;
+} 
+.features.act{
+	left: 150px;
+	display: block;
+}
+.features div {
+    position: relative;
+	margin: 0 auto;
+	display: flex;
+	gap: 20px;
+	margin-top: 5%;
+	align-items: center;
+	cursor: pointer;
+}
+.features div  p{
+	font-size: 15px;
+}
+.features div img {
+	width: 15%;
+}
+.company.activer {
+	left: 350px;
+    width: 130px;
+	display: block;
+}
+.company p + p {
+	margin-top: 15px;
+	cursor: pointer;
+}
+.togger {
+	display: none;
+}
+.tog {
+	display: none;
+}
+.features-btn:hover,
+.features-btn:focus,
+.company-btn:hover,
+.company-btn:focus,
+.about:focus,
+.about:hover {
+	color: #000;
+}
+.section-1 {
+    margin-top: 7%;
+    display: flex;
+    gap: 10%;
+
+}
+.left-div {
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.left-div h1 {
+    font-size: 67px;
+    opacity: 85%;
+}
+.left-div p {
+    margin-top: 10%;
+    width: 70%;
+    font-size: 14.5px;
+    opacity: 80%;
+}
+.left-div button {
+    padding: 10px 15px;
+    background: var(--Almost-Black);
+	border: 2px solid var(--Almost-Black);
+    color: var(--Almost-White);
+	border-radius: 10px;
+    margin-top: 10%;
+}
+.imgage {
+    margin-top: 10%;
+}
+.imgage img {
+    width: 15%;
+    margin-left: 6%;
+}
+.right-div{
+    margin-left: 15%;
+    background: url(../images/image-hero-desktop.png);
+    width: 100%;
+    background-size: 90%;
+    height: 520px;
+    background-repeat: no-repeat;
+}
+footer {
+	text-align: center;
+	color: var(--Almost-Black);
+}
+footer a {
+	color: red;
+}
+/* MOBILE MENU */
+.mobile-menu {
+	display: none;
+}
+.mobile {
+	position: absolute;
+	left: 1000%;
+	top: 20%;
+	background: #fff;
+	padding: 20px 20px 0px 50px;
+	width: 20%;
+	color: var(--Medium-Gray);
+	height: 700px;
+	display: none;
+}
+.in-active {
+	left: 80%;
+	display: block;
+}
+.close{
+	margin-left: 60%;
+	margin-bottom: 20%;
+
+}
+.close.in{
+	margin-left: 60%;
+}
+.features-mobile {
+	margin-left: 20%;
+	margin-top: 5%;
+	display: none;
+}
+.come {
+	margin-left: 20%;
+	margin-top: 5%;
+}
+.mobile-up {
+	display: none;
+}
+.mobile-ups {
+	display: none;
+}
+ .come .full{
+	display: flex;
+	gap: 5%;
+	margin-top: 10px;
+}
+.company-btn-mobile {
+	margin-top: 15%;
+}
+.company-mobile {
+	margin-left: 20%;
+	display: none;
+}
+.in-act p {
+	margin-top: 10%;
+	margin-left: 20%;
+	display: block;
+}
+.careers {
+	margin-top: 10%;
+}
+.abou {
+	margin-top: 10%;
+}
+.mobile-key {
+	text-align: center;
+	margin-top: 20%;
+}
+.register-mobile button{
+	margin-top: 20%;
+	padding: 20px 20px;
+	width: 100%;
+	border-radius: 15px;
+	border: 2px solid var(--Medium-Gray);
+	color: var(--Medium-Gray);
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		padding: 20px 0;
+	}
+	header {
+		padding: 0 20px;
+	}
+	.logo {
+		width: 120px;
+	}
+	main .section-1{
+		flex-direction: column-reverse;
+		width: 100%;
+		margin-top: 20px;
+		padding: 0;
+		text-align: center;
+	}
+	.right-div {
+		background: url(../images/image-hero-mobile.png);
+		background-size: 100%;
+		height: 450px;
+		background-repeat: no-repeat;
+		width: 100%;
+		margin-left: 0;
+	}
+	.left-div {
+		width: 100%;
+	}
+	.left-div p{
+		text-align: center;
+		width: 85%;
+		font-size: 25px;
+		margin-top: 5%;
+	}
+	.left-div h1 {
+		font-size: 55px;
+		width: 85%
+	}
+	.left-div button {
+		margin-left:-10% ;
+		margin-top: 5%;
+	}
+	.imgage {
+		margin-left: -15%;
+	}
+	.imgage img {
+		margin-left: 3%;
+	}
+	.mobile-menu {
+		display: block;
+		cursor: pointer;
+	}
+	.mobile {
+		display: block;
+	}
+	button {
+		margin-bottom: 10px;
+		font-size: 20px;
+		padding: 25px 50px;
+		border-radius: 15px;
+	}
+.mobile {
+    display: block;
+	width: 50%;
+}
+.in-active {
+	left: 50%;
+}
+.desktop {
+	display: none;
+}
+}
