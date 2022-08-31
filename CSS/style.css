@@ -213,6 +213,7 @@ footer a {
 }
 .in-active {
   left: 80%;
+  top: 0;
   display: block;
 }
 .close {
@@ -425,6 +426,9 @@ footer a {
   }
   .come {
     margin-left: 7%;
+  }
+  .in-active {
+    left: 50%;
   }
 }
 @media only screen and (max-width: 320px) {
